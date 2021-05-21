@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "template repository for userscripters' projects",
   "scripts": {
-    "lint": "eslint src --fix",
-    "build": "tsc"
+    "lint": "eslint src --fix --ext .js,.ts",
+    "build": "npm run lint && tsc"
   },
   "repository": {
     "type": "git",
