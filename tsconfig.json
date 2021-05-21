@@ -12,7 +12,8 @@
     "noUnusedLocals": true,
     "noErrorTruncation": true,
     "skipLibCheck": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "outDir": "dist"
   },
   "exclude": ["dist"],
   "include": ["src"]
