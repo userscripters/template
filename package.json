@@ -4,7 +4,8 @@
   "description": "template repository for userscripters' projects",
   "scripts": {
     "lint": "eslint src --fix --ext .js,.ts",
-    "build": "npm run lint && tsc"
+    "build": "npm run lint && tsc",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,10 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "chai": "^4.3.4",
     "eslint": "^7.26.0",
+    "mocha": "^8.4.0",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   }
 }
