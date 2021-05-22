@@ -13,12 +13,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "GPL-3.0+",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/userscripters/template/issues"
   },
   "homepage": "https://github.com/userscripters/template#readme",
   "devDependencies": {
+    "@types/node": "^15.6.0",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "chai": "^4.3.4",
