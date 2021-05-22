@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "template repository for userscripters' projects",
   "scripts": {
+    "build": "npm run lint && npm run clean && tsc && npm run uglify",
+    "clean": "rm -rf dist",
     "lint": "eslint src --fix --ext .js,.ts",
-    "build": "npm run lint && tsc",
-    "test": "mocha"
+    "test": "mocha",
+    "uglify": "uglifyjs dist/* --compress --mangle -o dist/index.min.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
     "eslint": "^7.26.0",
     "mocha": "^8.4.0",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "uglify-js": "^3.13.7"
   }
 }
