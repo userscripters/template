@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "template repository for userscripters' projects",
   "scripts": {
-    "build": "npm run lint && npm run clean && tsc && npm run uglify",
-    "clean": "rm -rf dist",
-    "lint": "eslint src --fix --ext .js,.ts",
     "test": "mocha",
-    "uglify": "uglifyjs dist/* --compress --mangle -o dist/index.min.js"
+    "lint": "eslint src --fix --ext .js,.ts",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run lint && npm run clean",
+    "uglify": "uglifyjs dist/index.js --compress --mangle -o dist/index.min.js",
+    "uglify-es5": "uglifyjs dist/index.js --compress --mangle -o dist/index-es5.min.js",
+    "build": "tsc && npm run uglify",
+    "build-es5": "tsc --target es5 && npm run uglify-es5",
+    "build-all": "npm run prebuild && npm run build && npm run build-es5"
   },
   "repository": {
     "type": "git",
