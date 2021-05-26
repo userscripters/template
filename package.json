@@ -7,17 +7,20 @@
     "lint": "eslint src --fix --ext .js,.ts",
     "clean": "rm -rf dist",
     "prebuild": "npm run lint && npm run clean",
-    "uglify": "uglifyjs dist/index.js --compress --mangle -o dist/index.min.js",
-    "uglify-es5": "uglifyjs dist/index.js --compress --mangle -o dist/index-es5.min.js",
-    "build": "tsc && npm run uglify",
-    "build-es5": "tsc --target es5 && npm run uglify-es5",
-    "build-all": "npm run prebuild && npm run build && npm run build-es5"
+    "uglify-modern": "uglifyjs dist/modern/* --compress --mangle -o dist/modern/index.min.js",
+    "uglify-legacy": "uglifyjs dist/legacy/* --compress --mangle -o dist/legacy/index.min.js",
+    "build-modern": "tsc --outDir dist/modern && npm run uglify-modern",
+    "build-legacy": "tsc --target es5 --outDir dist/legacy && npm run uglify-legacy",
+    "build-all": "npm run prebuild && npm run build-legacy && npm run build-modern"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/userscripters/template.git"
   },
-  "keywords": [],
+  "keywords": [
+    "userscripts",
+    "stackoverflow"
+  ],
   "author": "",
   "license": "GPL-3.0-or-later",
   "bugs": {
