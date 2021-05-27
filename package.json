@@ -31,6 +31,8 @@
   },
   "homepage": "https://github.com/userscripters/template#readme",
   "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
     "@types/node": "^15.6.0",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
