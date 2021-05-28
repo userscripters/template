@@ -9,11 +9,13 @@
     "lint": "eslint src --fix --ext .js,.ts",
     "clean": "rm -rf dist",
     "prebuild": "npm run lint && npm run clean",
+    "postbuild": "npm run headers-tm",
     "uglify-modern": "uglifyjs dist/modern/* --compress --mangle -o dist/modern/index.min.js",
     "uglify-legacy": "uglifyjs dist/legacy/* --compress --mangle -o dist/legacy/index.min.js",
-    "build-modern": "tsc --outDir dist/modern && npm run uglify-modern",
-    "build-legacy": "tsc --target es5 --outDir dist/legacy && npm run uglify-legacy",
-    "build-all": "npm run prebuild && npm run build-legacy && npm run build-modern"
+    "build-modern": "tsc --outDir dist/modern && npm run uglify-modern && npm run postbuild",
+    "build-legacy": "tsc --target es5 --outDir dist/legacy && npm run uglify-legacy && npm run postbuild",
+    "build-all": "npm run prebuild && npm run build-legacy && npm run build-modern && npm run postbuild",
+    "headers-tm": "generate tampermonkey --output dist/headers.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +25,10 @@
     "userscripts",
     "stackoverflow"
   ],
-  "author": "",
-  "contributors": [],
+  "author": "Jane Doe",
+  "contributors": [
+    "John Doe"
+  ],
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/userscripters/template/issues"
@@ -36,6 +40,7 @@
     "@types/node": "^15.6.0",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
+    "@userscripters/generate-headers": "^1.0.6",
     "chai": "^4.3.4",
     "eslint": "^7.26.0",
     "mocha": "^8.4.0",
