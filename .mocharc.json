@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json.schemastore.org/mocharc.json",
+    "extensions": [
+        "js",
+        "ts",
+        "tsx"
+    ],
+    "spec": [
+        "test/**/*.spec.*"
+    ]
+}
