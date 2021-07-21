@@ -1,21 +1,18 @@
 {
-  "name": "template",
+  "name": "@userscripters/template",
   "version": "1.0.0",
   "description": "template repository for userscripters' projects",
-  "icon": "",
-  "main": "dist/index.js",
   "scripts": {
     "test": "mocha",
     "lint": "eslint src --fix --ext .js,.ts",
     "clean": "rm -rf dist",
-    "prebuild": "npm run test && npm run lint && npm run clean",
-    "postbuild": "npm run headers-tm",
+    "prebuild": "npm run lint && npm run clean",
     "uglify-modern": "uglifyjs dist/modern/* --compress --mangle -o dist/modern/index.min.js",
     "uglify-legacy": "uglifyjs dist/legacy/* --compress --mangle -o dist/legacy/index.min.js",
-    "build-modern": "tsc --outDir dist/modern && npm run uglify-modern && npm run postbuild",
-    "build-legacy": "tsc --target es5 --outDir dist/legacy && npm run uglify-legacy && npm run postbuild",
-    "build-all": "npm run prebuild && npm run build-legacy && npm run build-modern && npm run postbuild",
-    "headers-tm": "generate tampermonkey --output dist/headers.js"
+    "build-modern": "tsc --outDir dist/modern && npm run uglify-modern",
+    "build-legacy": "tsc --target es5 --outDir dist/legacy && npm run uglify-legacy",
+    "build-all": "bash ./scripts/build.sh",
+    "headers-tm": "bash ./scripts/headers.sh"
   },
   "repository": {
     "type": "git",
@@ -25,9 +22,15 @@
     "userscripts",
     "stackoverflow"
   ],
-  "author": "Jane Doe",
+  "author": {
+    "name": "Jane Doe",
+    "email": "jane@doe.com"
+  },
   "contributors": [
-    "John Doe"
+    {
+      "name": "John Doe",
+      "email": "john@doe.com"
+    }
   ],
   "license": "GPL-3.0-or-later",
   "bugs": {
