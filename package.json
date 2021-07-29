@@ -12,7 +12,8 @@
     "build-modern": "tsc --outDir dist/modern && npm run uglify-modern",
     "build-legacy": "tsc --target es5 --outDir dist/legacy && npm run uglify-legacy",
     "build-all": "bash ./scripts/build.sh",
-    "headers-tm": "bash ./scripts/headers.sh"
+    "headers-tm": "bash ./scripts/headers.sh",
+    "readme": "generate-readme"
   },
   "repository": {
     "type": "git",
@@ -45,6 +46,7 @@
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
     "@userscripters/generate-headers": "^1.6.4",
+    "@userscripters/generate-readme": "^1.1.0",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
     "eslint": "^7.31.0",
