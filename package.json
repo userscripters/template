@@ -44,7 +44,7 @@
     "@types/mocha": "^8.2.3",
     "@types/node": "^16.4.2",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
-    "@typescript-eslint/parser": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.5",
     "@userscripters/generate-headers": "^1.6.4",
     "@userscripters/generate-readme": "^1.1.0",
     "chai": "^4.3.4",
