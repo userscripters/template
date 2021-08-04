@@ -2,7 +2,9 @@
 // @author           Jane Doe <jane@doe.com>
 // @contributors     John Doe <john@doe.com>
 // @description      template repository for userscripters' projects
+// @grant            none
 // @homepage         https://github.com/userscripters/template#readme
+// @match            https//*.stackoverflow.com/*
 // @name             template
 // @namespace        userscripters
 // @source           git+https://github.com/userscripters/template.git
