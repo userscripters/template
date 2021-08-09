@@ -7,6 +7,6 @@ generate tampermonkey \
     -o $output \
     -m $(cat .matches)
 
-userscript="$(find -iwholename "./$dist/*" -type f | grep -e "*\.js")"
+userscript="$(find -iwholename "./$dist/*\.js" -type f -not -iname "*headers\.js")"
 
 sed -i -e "{1e cat $output; echo; echo" -e "; N}" $userscript
