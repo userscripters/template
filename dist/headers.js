@@ -4,7 +4,12 @@
 // @description      template repository for userscripters' projects
 // @grant            none
 // @homepage         https://github.com/userscripters/template#readme
-// @match            https//*.stackoverflow.com/*
+// @match            https://*.askubuntu.com/*
+// @match            https://*.mathoverflow.net/*
+// @match            https://*.serverfault.com/*
+// @match            https://*.stackapps.com/*
+// @match            https://*.stackexchange.com/*
+// @match            https://*.stackoverflow.com/*
 // @name             template
 // @namespace        userscripters
 // @source           git+https://github.com/userscripters/template.git

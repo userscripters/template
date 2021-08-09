@@ -1,20 +1,21 @@
 {
-  "compilerOptions": {
-    "strict": true,
-    "removeComments": true,
-    "allowJs": true,
-    "checkJs": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "target": "es2019",
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noErrorTruncation": true,
-    "skipLibCheck": true,
-    "downlevelIteration": true,
-    "outDir": "dist"
-  },
-  "exclude": ["dist"],
-  "include": ["src"]
+    "compilerOptions": {
+        "strict": true,
+        "removeComments": true,
+        "allowJs": true,
+        "checkJs": true,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "target": "es2019",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "noErrorTruncation": true,
+        "skipLibCheck": true,
+        "downlevelIteration": true,
+        "outDir": "dist",
+        "types": ["@userscripters/stackexchange-global-types", "jquery"]
+    },
+    "exclude": ["dist"],
+    "include": ["src"]
 }

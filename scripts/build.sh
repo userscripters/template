@@ -6,7 +6,7 @@ npm run prebuild &&
     npm run headers-tm &&
     npm run readme
 
-declare files=$(find dist -iname "index*")
+declare files=$(find dist -iname "*\.js" -not -iname "headers*")
 
 for file in ${files}; do
     mv "$file" "${file%.js}.user.js"
