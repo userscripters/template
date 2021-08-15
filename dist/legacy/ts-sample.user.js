@@ -12,6 +12,7 @@
 // @match            https://*.stackoverflow.com/*
 // @name             template
 // @namespace        userscripters
+// @run-at           document-start
 // @source           git+https://github.com/userscripters/template.git
 // @supportURL       https://github.com/userscripters/template/issues
 // @version          1.0.0
