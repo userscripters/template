@@ -1,6 +1,6 @@
 {
   "name": "@userscripters/template",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "template repository for userscripters' projects",
   "scripts": {
     "test": "mocha",
@@ -51,7 +51,7 @@
     "@typescript-eslint/parser": "^4.29.3",
     "@userscripters/generate-headers": "^2.6.0",
     "@userscripters/generate-readme": "^2.0.0",
-    "@userscripters/stackexchange-global-types": "^1.5.0",
+    "@userscripters/stackexchange-global-types": "^2.0.2",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
     "eslint": "^7.32.0",
