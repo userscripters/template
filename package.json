@@ -51,7 +51,7 @@
     "@typescript-eslint/parser": "^4.31.0",
     "@userscripters/generate-headers": "^2.6.0",
     "@userscripters/generate-readme": "^2.1.1",
-    "@userscripters/stackexchange-global-types": "^2.1.1",
+    "@userscripters/stackexchange-global-types": "^2.2.0",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
     "eslint": "^7.32.0",
