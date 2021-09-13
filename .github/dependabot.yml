@@ -1,4 +1,11 @@
 version: 2
+
+registries:
+  github-npm-registry:
+    type: npm-registry
+    url: https://npm.pkg.github.com/userscripters
+    token: "${{secrets.GH_NPM_REGISTRY_TOKEN}}"
+
 updates:
   - package-ecosystem: "npm"
     directory: "/"
@@ -17,3 +24,5 @@ updates:
       - dependency-type: "direct"
     commit-message:
       prefix: "Chores"
+    registries:
+      - github-npm-registry
