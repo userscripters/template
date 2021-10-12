@@ -10,10 +10,10 @@
 // @match            https://*.stackapps.com/*
 // @match            https://*.stackexchange.com/*
 // @match            https://*.stackoverflow.com/*
-// @name             template
+// @name             Template
 // @namespace        userscripters
 // @run-at           document-start
 // @source           git+https://github.com/userscripters/template.git
 // @supportURL       https://github.com/userscripters/template/issues
-// @version          1.0.0
+// @version          0.1.0
 // ==/UserScript==
