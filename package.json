@@ -49,7 +49,7 @@
     "@types/node": "^16.11.10",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
-    "@userscripters/generate-headers": "^2.6.0",
+    "@userscripters/generate-headers": "^2.7.3",
     "@userscripters/generate-readme": "^2.1.1",
     "@userscripters/stackexchange-global-types": "^2.2.1",
     "chai": "^4.3.4",
