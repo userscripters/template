@@ -47,17 +47,17 @@
     "@types/mocha": "^9.1.0",
     "@types/tampermonkey": "^4.0.5",
     "@types/node": "^17.0.21",
-    "@typescript-eslint/eslint-plugin": "^5.13.0",
-    "@typescript-eslint/parser": "^5.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
     "@userscripters/generate-headers": "^2.10.0",
     "@userscripters/generate-readme": "^2.1.1",
     "@userscripters/stackexchange-global-types": "^2.4.1",
     "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^8.10.0",
-    "mocha": "^9.2.1",
-    "ts-node": "^10.6.0",
+    "eslint": "^8.11.0",
+    "mocha": "^9.2.2",
+    "ts-node": "^10.7.0",
     "typescript": "^4.6.2",
-    "uglify-js": "^3.15.2"
+    "uglify-js": "^3.15.3"
   }
 }
