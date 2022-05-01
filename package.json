@@ -13,7 +13,7 @@
     "build-legacy": "tsc --target es5 --outDir dist/legacy && npm run uglify-legacy",
     "build-all": "bash ./scripts/build.sh",
     "headers-tm": "bash ./scripts/headers.sh",
-    "readme": "generate-readme",
+    "readme": "bash ./scripts/readme.sh",
     "postversion": "bash ./scripts/postversion.sh"
   },
   "repository": {
@@ -45,12 +45,12 @@
     "@types/greasemonkey": "^4.0.2",
     "@types/jquery": "^3.5.14",
     "@types/mocha": "^9.1.1",
-    "@types/tampermonkey": "^4.0.5",
     "@types/node": "^17.0.30",
+    "@types/tampermonkey": "^4.0.5",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "@userscripters/generate-headers": "^2.12.0",
-    "@userscripters/generate-readme": "^2.1.1",
+    "@userscripters/generate-readme": "^2.3.1",
     "@userscripters/stackexchange-global-types": "^2.4.1",
     "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
