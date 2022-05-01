@@ -55,16 +55,17 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var main = function () { return Promise.resolve("Hello world!"); };
-(function () { return __awaiter(void 0, void 0, void 0, function () {
-    var hello;
+window.addEventListener("load", function () { return __awaiter(void 0, void 0, void 0, function () {
+    var main, hello;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4, main()];
+            case 0:
+                main = function () { return Promise.resolve("Hello world!"); };
+                return [4, main()];
             case 1:
                 hello = _a.sent();
                 console.log(hello);
                 return [2];
         }
     });
-}); })();
+}); }, { once: true });

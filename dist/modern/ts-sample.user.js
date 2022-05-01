@@ -19,9 +19,8 @@
 // ==/UserScript==
 
 "use strict";
-((_w, d) => {
-    const test = d.getElementById("test");
-    if (!test)
-        return;
-    Stacks.showModal(test);
-})(window, document);
+window.addEventListener("load", async () => {
+    const main = () => Promise.resolve("Hello world!");
+    const hello = await main();
+    console.log(hello);
+}, { once: true });

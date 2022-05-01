@@ -2,9 +2,11 @@
  * @fileoverview default source file
  */
 
-const main = () => Promise.resolve("Hello world!");
+window.addEventListener("load", async () => {
 
-(async () => {
+    const main = () => Promise.resolve("Hello world!");
+
     const hello = await main();
     console.log(hello);
-})();
+
+}, { once: true });

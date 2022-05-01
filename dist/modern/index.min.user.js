@@ -18,4 +18,4 @@
 // @version          0.1.0
 // ==/UserScript==
 
-"use strict";const main=()=>Promise.resolve("Hello world!");(async()=>{var o=await main();console.log(o)})(),(()=>{var o=document.getElementById("test");o&&Stacks.showModal(o)})(window);
+"use strict";window.addEventListener("load",async()=>{var o=await Promise.resolve("Hello world!");console.log(o)},{once:!0}),window.addEventListener("load",async()=>{var o=await Promise.resolve("Hello world!");console.log(o)},{once:!0});

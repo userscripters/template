@@ -19,8 +19,8 @@
 // ==/UserScript==
 
 "use strict";
-const main = () => Promise.resolve("Hello world!");
-(async () => {
+window.addEventListener("load", async () => {
+    const main = () => Promise.resolve("Hello world!");
     const hello = await main();
     console.log(hello);
-})();
+}, { once: true });
