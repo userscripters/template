@@ -17,6 +17,7 @@
         "types": [
             "@userscripters/storage",
             "@userscripters/stackexchange-global-types",
+            "@userscripters/stackexchange-api-types",
             "jquery",
             "greasemonkey",
             "tampermonkey"
