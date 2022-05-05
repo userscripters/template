@@ -15,6 +15,7 @@
         "downlevelIteration": true,
         "outDir": "dist",
         "types": [
+            "@userscripters/storage",
             "@userscripters/stackexchange-global-types",
             "jquery",
             "greasemonkey",

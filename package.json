@@ -52,6 +52,7 @@
     "@userscripters/generate-headers": "^2.12.0",
     "@userscripters/generate-readme": "^2.3.1",
     "@userscripters/stackexchange-global-types": "^2.4.1",
+    "@userscripters/storage": "^0.1.2",
     "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
     "eslint": "^8.14.0",
