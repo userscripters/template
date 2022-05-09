@@ -4,7 +4,8 @@ npm run prebuild &&
     npm run build-legacy &&
     npm run build-modern &&
     npm run headers-tm &&
-    npm run readme
+    npm run readme &&
+    npm run stackapps
 
 declare files=$(find dist -iname "*\.js" -not -iname "headers*")
 
