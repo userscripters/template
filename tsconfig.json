@@ -15,6 +15,7 @@
         "downlevelIteration": true,
         "outDir": "dist",
         "types": [
+            "@userscripters/global-types",
             "@userscripters/storage",
             "@userscripters/stackexchange-global-types",
             "@userscripters/stackexchange-api-types",
