@@ -5,4 +5,5 @@ on:
         types: [released]
 
 jobs:
-    uses: userscripters/shared-actions/.github/workflows/workflow-npm_publish.yml@master
+    build:
+        uses: userscripters/shared-actions/.github/workflows/workflow-npm_publish.yml@master
