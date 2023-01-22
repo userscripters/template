@@ -3,12 +3,5 @@ name: build
 on: [push, pull_request]
 
 jobs:
-    prepare:
-        uses: userscripters/shared-actions/.github/workflows/workflow-nodejs.yml@master
     build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Compile
-              run: npm run build-all
-            - name: Run tests
-              run: npm run test
+        uses: userscripters/shared-actions/.github/workflows/workflow-nodejs.yml@master
