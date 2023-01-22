@@ -3,25 +3,11 @@ name: build
 on: [push, pull_request]
 
 jobs:
+    prepare:
+        uses: userscripters/shared-actions/.github/workflows/workflow-nodejs.yml@main
     build:
         runs-on: ubuntu-latest
-
         steps:
-            - uses: actions/checkout@v3
-            - name: Using Node 16
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 16
-                  cache: 'npm'
-            - name: Update npm version to latest
-              run: npm install -g npm@latest # stop showing warnings about the lockfile
-            - name: Install dependencies
-              run: |
-                  npm config set //npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN
-                  npm install --production=false
-              env:
-                  NODE_AUTH_TOKEN: ${{github.token}}
-                  NODE_ENV: production
             - name: Compile
               run: npm run build-all
             - name: Run tests
