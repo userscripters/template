@@ -26,6 +26,7 @@ Latest version: 0.1.0
 
 [Install](https://github.com/userscripters/template/raw/master/dist/modern/index.user.js) | [Minified](https://github.com/userscripters/template/raw/master/dist/modern/index.min.user.js)
 
+
 ### Platform
 
 Version number means "last tested on":

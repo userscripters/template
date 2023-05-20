@@ -1,35 +1,35 @@
 // ==UserScript==
-// @author           Jane Doe <jane@doe.com>
-// @contributors     John Doe <john@doe.com>
-// @description      template repository for userscripters' projects
-// @grant            none
-// @homepage         https://github.com/userscripters/template#readme
-// @match            https://*.stackexchange.com/questions/*
-// @match            https://askubuntu.com/questions/*
-// @match            https://es.meta.stackoverflow.com/questions/*
-// @match            https://es.stackoverflow.com/questions/*
-// @match            https://ja.meta.stackoverflow.com/questions/*
-// @match            https://ja.stackoverflow.com/questions/*
-// @match            https://mathoverflow.net/questions/*
-// @match            https://meta.askubuntu.com/questions/*
-// @match            https://meta.mathoverflow.net/questions/*
-// @match            https://meta.serverfault.com/questions/*
-// @match            https://meta.stackoverflow.com/questions/*
-// @match            https://meta.superuser.com/questions/*
-// @match            https://pt.meta.stackoverflow.com/questions/*
-// @match            https://pt.stackoverflow.com/questions/*
-// @match            https://ru.meta.stackoverflow.com/questions/*
-// @match            https://ru.stackoverflow.com/questions/*
-// @match            https://serverfault.com/questions/*
-// @match            https://stackapps.com/questions/*
-// @match            https://stackoverflow.com/questions/*
-// @match            https://superuser.com/questions/*
-// @name             Template
-// @namespace        userscripters
-// @run-at           document-start
-// @source           git+https://github.com/userscripters/template.git
-// @supportURL       https://github.com/userscripters/template/issues
-// @version          0.1.0
+// @name            Template
+// @author          Jane Doe <jane@doe.com>
+// @contributors    John Doe <john@doe.com>
+// @description     template repository for userscripters' projects
+// @grant           none
+// @homepage        https://github.com/userscripters/template#readme
+// @match           https://stackoverflow.com/questions/*
+// @match           https://serverfault.com/questions/*
+// @match           https://superuser.com/questions/*
+// @match           https://*.stackexchange.com/questions/*
+// @match           https://askubuntu.com/questions/*
+// @match           https://stackapps.com/questions/*
+// @match           https://mathoverflow.net/questions/*
+// @match           https://pt.stackoverflow.com/questions/*
+// @match           https://ja.stackoverflow.com/questions/*
+// @match           https://ru.stackoverflow.com/questions/*
+// @match           https://es.stackoverflow.com/questions/*
+// @match           https://meta.stackoverflow.com/questions/*
+// @match           https://meta.serverfault.com/questions/*
+// @match           https://meta.superuser.com/questions/*
+// @match           https://meta.askubuntu.com/questions/*
+// @match           https://meta.mathoverflow.net/questions/*
+// @match           https://pt.meta.stackoverflow.com/questions/*
+// @match           https://ja.meta.stackoverflow.com/questions/*
+// @match           https://ru.meta.stackoverflow.com/questions/*
+// @match           https://es.meta.stackoverflow.com/questions/*
+// @namespace       userscripters
+// @run-at          document-start
+// @source          git+https://github.com/userscripters/template.git
+// @supportURL      https://github.com/userscripters/template/issues
+// @version         0.1.0
 // ==/UserScript==
 
 "use strict";
@@ -48,7 +48,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function verb(n) { return function (v) { return step([n, v]); }; }
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
             if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
             if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
@@ -69,17 +69,19 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-window.addEventListener("load", function () { return __awaiter(void 0, void 0, void 0, function () {
-    var main, hello;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                main = function () { return Promise.resolve("Hello world!"); };
-                return [4, main()];
-            case 1:
-                hello = _a.sent();
-                console.log(hello);
-                return [2];
-        }
-    });
-}); }, { once: true });
+window.addEventListener("load", function () {
+    StackExchange === null || StackExchange === void 0 ? void 0 : StackExchange.ready(function () { return __awaiter(void 0, void 0, void 0, function () {
+        var main, hello;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    main = function () { return Promise.resolve("Hello world!"); };
+                    return [4, main()];
+                case 1:
+                    hello = _a.sent();
+                    console.log(hello);
+                    return [2];
+            }
+        });
+    }); });
+}, { once: true });
