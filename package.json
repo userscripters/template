@@ -48,7 +48,7 @@
         "@types/mocha": "^10.0.6",
         "@types/node": "^20.10.4",
         "@types/tampermonkey": "^5.0.2",
-        "@typescript-eslint/eslint-plugin": "^6.13.2",
+        "@typescript-eslint/eslint-plugin": "^6.14.0",
         "@typescript-eslint/parser": "^5.62.0",
         "@userscripters/generate-headers": "^3.4.0",
         "@userscripters/generate-readme": "^2.3.1",
