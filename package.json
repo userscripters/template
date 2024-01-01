@@ -57,7 +57,7 @@
         "@userscripters/stackexchange-api-types": "^3.4.0",
         "@userscripters/stackexchange-global-types": "^2.7.0",
         "@userscripters/storage": "^0.1.2",
-        "chai": "^4.3.10",
+        "chai": "^5.0.0",
         "chai-as-promised": "^7.1.1",
         "eslint": "^8.56.0",
         "mocha": "^10.2.0",
