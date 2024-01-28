@@ -21,7 +21,8 @@
             "@userscripters/stackexchange-api-types",
             "jquery",
             "greasemonkey",
-            "tampermonkey"
+            "tampermonkey",
+            "mocha"
         ]
     },
     "exclude": ["dist"],

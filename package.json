@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "template repository for userscripters' projects",
     "scripts": {
-        "test": "mocha",
+        "test": "TS_NODE_PROJECT='./test/tsconfig.json' mocha",
         "lint": "eslint src --fix --ext .js,.ts",
         "clean": "rm -rf dist",
         "prebuild": "npm run lint && npm run clean",
@@ -62,5 +62,6 @@
         "ts-node": "^10.9.2",
         "typescript": "^5.3.3",
         "uglify-js": "^3.17.4"
-    }
+    },
+    "type": "module"
 }
