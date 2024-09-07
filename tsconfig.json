@@ -22,7 +22,8 @@
             "jquery",
             "greasemonkey",
             "tampermonkey",
-            "mocha"
+            "mocha",
+            "node"
         ]
     },
     "exclude": ["dist"],
