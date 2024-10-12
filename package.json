@@ -46,8 +46,8 @@
         "@types/chai": "^4.3.20",
         "@types/greasemonkey": "^4.0.7",
         "@types/jquery": "^3.5.31",
-        "@types/mocha": "^10.0.8",
-        "@types/node": "^22.7.4",
+        "@types/mocha": "^10.0.9",
+        "@types/node": "^22.7.5",
         "@types/tampermonkey": "^5.0.3",
         "@userscripters/generate-headers": "^3.4.2",
         "@userscripters/generate-readme": "^3.0.2",
@@ -59,8 +59,8 @@
         "chai": "^5.1.1",
         "mocha": "^10.7.3",
         "ts-node": "^10.9.2",
-        "typescript": "^5.6.2",
-        "typescript-eslint": "^8.8.0",
+        "typescript": "^5.6.3",
+        "typescript-eslint": "^8.8.1",
         "uglify-js": "^3.19.3"
     },
     "type": "module"
