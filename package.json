@@ -47,7 +47,7 @@
         "@types/greasemonkey": "^4.0.7",
         "@types/jquery": "^3.5.32",
         "@types/mocha": "^10.0.10",
-        "@types/node": "^22.10.10",
+        "@types/node": "^22.13.0",
         "@types/tampermonkey": "^5.0.4",
         "@userscripters/generate-headers": "^3.5.0",
         "@userscripters/generate-readme": "^3.0.2",
@@ -60,7 +60,7 @@
         "mocha": "^10.8.2",
         "ts-node": "^10.9.2",
         "typescript": "^5.7.3",
-        "typescript-eslint": "^8.21.0",
+        "typescript-eslint": "^8.22.0",
         "uglify-js": "^3.19.3"
     },
     "type": "module"
