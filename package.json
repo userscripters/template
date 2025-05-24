@@ -47,7 +47,7 @@
         "@types/greasemonkey": "^4.0.7",
         "@types/jquery": "^3.5.32",
         "@types/mocha": "^10.0.10",
-        "@types/node": "^22.15.18",
+        "@types/node": "^22.15.21",
         "@types/tampermonkey": "^5.0.4",
         "@userscripters/generate-headers": "^3.5.0",
         "@userscripters/generate-readme": "^3.0.2",
