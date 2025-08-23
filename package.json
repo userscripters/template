@@ -41,11 +41,11 @@
     },
     "homepage": "https://github.com/userscripters/template#readme",
     "devDependencies": {
-        "@eslint/js": "^9.33.0",
+        "@eslint/js": "^9.34.0",
         "@stylistic/eslint-plugin": "^2.13.0",
         "@types/chai": "^4.3.20",
         "@types/greasemonkey": "^4.0.7",
-        "@types/jquery": "^3.5.32",
+        "@types/jquery": "^3.5.33",
         "@types/mocha": "^10.0.10",
         "@types/node": "^22.17.2",
         "@types/tampermonkey": "^5.0.4",
@@ -56,11 +56,11 @@
         "@userscripters/stackexchange-api-types": "^3.4.0",
         "@userscripters/stackexchange-global-types": "^2.8.2",
         "@userscripters/storage": "^0.1.2",
-        "chai": "^5.2.1",
+        "chai": "^5.3.3",
         "mocha": "^10.8.2",
         "ts-node": "^10.9.2",
         "typescript": "^5.9.2",
-        "typescript-eslint": "^8.39.1",
+        "typescript-eslint": "^8.40.0",
         "uglify-js": "^3.19.3"
     },
     "type": "module"
